@@ -2,6 +2,7 @@ const express = require ('express');
 const app = express();
 const router = require('./routes')
 
+app.use(express.urlencoded({ extended: false }));
 app.get('/', (req, res) =>{
     res.redirect('/player')
 })

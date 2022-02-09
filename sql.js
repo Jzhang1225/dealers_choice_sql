@@ -1,6 +1,6 @@
 sql = `
     DROP TABLE IF EXISTS data;
-    CREATE TABLE data (id SERIAL PRIMARY KEY, name VARCHAR(50), titles INTEGER);
+    CREATE TABLE data (id SERIAL PRIMARY KEY, name VARCHAR(50) UNIQUE, titles INTEGER);
     INSERT INTO data (name, titles) VALUES ('Rafael Nadal', '21');
     INSERT INTO data (name, titles) VALUES ('Roger Federer', '20');
     INSERT INTO data (name, titles) VALUES ('Novak Djokovic', '20');
